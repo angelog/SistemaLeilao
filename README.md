@@ -4,6 +4,9 @@
 - Java 8 ou mais;
 - Maven
 
+### Run:
+#### -> mvn spring-boot:run
+
 ### Rotas:
 
 #### localhost:8080/users/ Method : Post
