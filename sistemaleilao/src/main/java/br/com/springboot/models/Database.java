@@ -1,17 +1,25 @@
 package br.com.springboot.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Database {
 
-    public static List<Leilao> leiloes;
-
-    public List<Leilao> getLeilao() {
+    static List<Leilao> leiloes;
+    static List<User> users;
+    public static List<Leilao> getLeilao(){
+        if (leiloes == null){
+            leiloes = new ArrayList<>();
+        }
         return leiloes;
     }
 
     public void setLeilao(List<Leilao> leilao) {
         Database.leiloes = leilao;
+    }
+
+    public static List<User> getUsuarios() {
+        return users;
     }
 
     public void add(Leilao leilao) {

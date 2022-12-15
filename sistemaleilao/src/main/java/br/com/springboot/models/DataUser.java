@@ -1,11 +1,15 @@
 package br.com.springboot.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class DataUser {
-    public static List<User> users;
+    static List<User> users;
 
-    public List<User> getUsuarios() {
+    public static List<User> getUsuarios() {
+        if (users == null){
+            users = new ArrayList<>();
+        }
         return users;
     }
 
