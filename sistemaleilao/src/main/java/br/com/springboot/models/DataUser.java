@@ -16,10 +16,5 @@ public class DataUser {
     public void setUsuarios(List<User> users) {
         DataUser.users = users;
     }
-    public void add(User user){
-        users.add(user);
-    }
-    public void remove(User user){
-        users.remove(user);
-    }
+    
 }

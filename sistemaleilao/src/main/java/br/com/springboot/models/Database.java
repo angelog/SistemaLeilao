@@ -22,11 +22,4 @@ public class Database {
         return users;
     }
 
-    public void add(Leilao leilao) {
-        leiloes.add(leilao);
-    }
-
-    public void remove(Leilao leilao){
-        leiloes.remove(leilao);
-    }
 }

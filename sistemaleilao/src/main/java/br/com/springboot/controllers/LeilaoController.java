@@ -85,6 +85,4 @@ public class LeilaoController {
         return leilaoService.deleteVeiculo(id, idVeiculo);
     }
 
-
-
 }

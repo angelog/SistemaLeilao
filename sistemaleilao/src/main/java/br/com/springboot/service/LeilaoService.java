@@ -12,6 +12,7 @@ import br.com.springboot.models.Lance;
 import br.com.springboot.models.Leilao;
 import br.com.springboot.models.Veiculo;
 
+
 @Service
 public class LeilaoService {
     @Autowired
@@ -60,4 +61,5 @@ public class LeilaoService {
     public Veiculo deleteVeiculo(Integer id,Integer idVeiculo){
         return leiloes.deleteVeiculo(id, idVeiculo);
     }
+    
 }
